@@ -1,13 +1,15 @@
 import React from "react";
 import HeroAboutMe from "./components/HeroAboutMe";
 import Navigation from "./components/Navigation";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-neutral-900 ">
       <Navigation />
-      <main className="bg-zinc-800 h-screen">
+      <main className="bg-neutral-700 ">
         <HeroAboutMe />
+        <Sidebar />
       </main>
     </div>
   );

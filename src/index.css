@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  html {
+    font-family: "Poppins", "Noto Sans Arabic", Proxima Nova, system-ui,
+      sans-serif;
+  }
+}
