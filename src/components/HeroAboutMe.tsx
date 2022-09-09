@@ -14,14 +14,27 @@ function HeroAboutMe() {
       <div className="py-14">
         <p className="tracking-wider pb-5 font-normal text-slate-300">
           سلام به وبسایت من خوش اومدین. شما بیشتر
-          <a className="text-slate-200 underline decoration-violet-300/75 decoration-3 cursor-pointer hover:text-violet-500"> درباره‌ی من </a>
+          <a className="text-slate-200 underline decoration-violet-300/75 decoration-3 cursor-pointer hover:text-violet-500">
+            {" "}
+            درباره‌ی من{" "}
+          </a>
           رو بخونید یا حتی میتونید
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"> رزومه </a>و
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"> مقالات </a>
+          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+            {" "}
+            رزومه{" "}
+          </a>
+          و
+          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+            {" "}
+            مقالات{" "}
+          </a>
           منو چک کنید.
           <br></br>
           سورس سایت رو میتونید
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"> اینجا </a>
+          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+            {" "}
+            اینجا{" "}
+          </a>
           پیدا کنید
         </p>
       </div>
