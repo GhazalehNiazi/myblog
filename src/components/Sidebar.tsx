@@ -8,7 +8,6 @@ function Sidebar() {
           غزاله نیازی ثابت
         </h1>
         <h5 className="text-slate-300 font-thin underline text-sm tracking-widest font-['Poppins'] decoration-violet-500/75 decoration-2">
-          {" "}
           GhazaleNiaziSabet02@gmail.com
         </h5>
       </div>
