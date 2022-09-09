@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename='/myblog'>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="about" element={<About />} />
