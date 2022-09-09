@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const navItems: { name: string; link: string }[] = [
   { name: "درباره‌ی من", link: "/aboutme" },
@@ -25,14 +26,14 @@ function Menu({
         <span className="text-violet-500">x</span>
       </button>
       <div className="text-slate-200 font-medium text-xl py-5 border-b-2 border-neutral-700">
-        <a href="/">غزاله نیازی</a>
+        <Link to="/">غزاله نیازی</Link>
       </div>
       {navItems.map((item) => (
         <div
           key={item.link}
           className="text-slate-200 font-medium text-xl py-5 border-b-2 border-neutral-700"
         >
-          <a href={item.link}>{item.name}</a>
+          <Link to={item.link}>{item.name}</Link>
         </div>
       ))}
     </div>
