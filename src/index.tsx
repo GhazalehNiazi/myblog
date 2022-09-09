@@ -15,9 +15,9 @@ root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/Articles" element={<Articles />} />
+        <Route path="about" element={<About />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="Articles" element={<Articles />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
