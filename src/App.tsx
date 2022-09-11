@@ -21,7 +21,7 @@ function App() {
     if (path) {
       localStorage.removeItem("path");
       console.log(path);
-      navigate(`${path}`, { replace: true });
+      navigate(path, { replace: true });
     }
   }, []);
 
