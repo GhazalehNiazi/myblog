@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import Navigation from "./components/Navigation";
 import Sidebar from "./components/Sidebar";
 import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -14,13 +14,12 @@ function App() {
     return showMenu;
   };
 
-  let [searchParams, setSearchParams] = useSearchParams();
-
+  let navigate = useNavigate();
   let path = localStorage.getItem("path");
   if (path) {
     localStorage.removeItem("path");
-    setSearchParams(path);
-    console.log(searchParams);
+    navigate(`../${path}`, { replace: true });
+    console.log("hryyyyy");
   }
 
   return (
