@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroAboutMe from "./components/HeroAboutMe";
 import Menu from "./components/Menu";
 import Navigation from "./components/Navigation";
@@ -16,11 +16,14 @@ function App() {
 
   let navigate = useNavigate();
   let path = localStorage.getItem("path");
-  if (path) {
-    localStorage.removeItem("path");
-    navigate(`../${path}`, { replace: true });
-    console.log("hryyyyy");
-  }
+
+  useEffect(() => {
+    if (path) {
+      localStorage.removeItem("path");
+      console.log("hryyyyy");
+      navigate(`${"path"}`, { replace: true });
+    }
+  }, []);
 
   return (
     <div className="App bg-neutral-900 ">

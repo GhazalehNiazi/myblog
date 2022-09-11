@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Articles from "./components/Articles";
-import { Navigate } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
