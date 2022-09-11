@@ -6,10 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Articles from "./components/Articles";
+import { Navigate } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+
+
 root.render(
   <React.StrictMode>
     <BrowserRouter basename='/myblog'>
@@ -18,6 +22,7 @@ root.render(
         <Route path="about" element={<About />} />
         <Route path="resume" element={<Resume />} />
         <Route path="articles" element={<Articles />} />
+        <Route path='*' element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
