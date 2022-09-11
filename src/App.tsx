@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     if (path) {
       localStorage.removeItem("path");
-      console.log("hryyyyy");
+      console.log(path);
       navigate(`${"path"}`, { replace: true });
     }
   }, []);
