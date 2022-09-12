@@ -2,8 +2,8 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className="bg-neutral-900 text-slate-200 flex flex-col  justify-between p-2 align-center font-['Noto Sans Arabic'] px-4 lg:bg-neutral-700 lg:w-4/12">
-      <div className="flex items-center justify-center flex-col py-16 border-b border-neutral-400">
+    <div className="bg-neutral-900 text-slate-200 flex flex-col  justify-between  align-center font-['Noto Sans Arabic'] px-16  lg:bg-neutral-700 lg:w-4/12">
+      <div className="flex  justify-center flex-col py-16 border-b border-neutral-400">
         <h1 className="text-3xl font-semibold tracking-wider pb-4 ">
           غزاله نیازی ثابت
         </h1>
