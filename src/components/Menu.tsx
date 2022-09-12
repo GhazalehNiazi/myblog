@@ -15,7 +15,7 @@ function Menu({
   return (
     <div
       className={`h-screen bg-neutral-900 fixed left-0 w-full pt-20 px-8 ease-out-in duration-300 ${
-        showMenu ? "translate-x-0 " : "translate-x-full" 
+        showMenu ? "translate-x-0 " : "translate-x-full"
       }`}
     >
       <button
@@ -31,6 +31,7 @@ function Menu({
         <div
           key={item.link}
           className="text-slate-200 font-medium text-xl py-5 border-b-2 border-neutral-700"
+          onClick={() => setShowMenu()}
         >
           <Link to={item.link}>{item.name}</Link>
         </div>
