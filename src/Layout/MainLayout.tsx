@@ -17,7 +17,7 @@ const MainLayout = () => {
     <div className=" ">
       <Menu setShowMenu={clickHandler} showMenu={showMenu} />
       <Navigation setShowMenu={clickHandler} showMenu={showMenu} />
-      <main className=" flex flex-col lg:flex-row lg:min-h-[91.4vh] lg:justify-between">
+      <main className=" flex flex-col lg:flex-row lg:min-h-[91.4vh] lg:justify-between lg:flex-row-reverse">
         <Outlet />
         <Sidebar />
       </main>

@@ -4,6 +4,7 @@ const navItems: { name: string; link: string }[] = [
   { name: "درباره‌ی من", link: "/aboutme" },
   { name: "پروژه‌ها", link: "/projects" },
   { name: "مقاله‌ها", link: "/articles" },
+  { name: "خانه", link: "/" },
 ];
 function Menu({
   setShowMenu,
