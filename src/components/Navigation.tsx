@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink , Link } from "react-router-dom";
 const navItems: { name: string; link: string }[] = [
   { name: "درباره‌ی من", link: "/aboutme" },
   { name: "پروژه‌ها", link: "/projects" },
@@ -29,7 +29,14 @@ function Navigation({
         <div className="hidden md:flex justify-between w-8/12 px-2">
           {navItems.map((item) => (
             <button key={item.link} className="">
-              <Link to={item.link}>{item.name}</Link>
+              <NavLink
+                to={item.link}
+                className={({ isActive }) =>
+                  isActive ? "underline decoration-violet-500" : undefined
+                }
+              >
+                {item.name}
+              </NavLink>
             </button>
           ))}
         </div>
