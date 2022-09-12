@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function HeroAboutMe() {
   return (
     <div className=" mt-10 p-4 text-slate-100 bg-neutral-900/75 lg:max-h-min lg:mx-12  lg:grow lg:justify-self-center lg:self-start">
@@ -14,24 +14,36 @@ function HeroAboutMe() {
       <div className="py-14">
         <p className="tracking-wider pb-5 font-normal text-slate-300">
           سلام به وبسایت من خوش اومدین. شما بیشتر
-          <a className="text-slate-200 underline decoration-violet-300/75 decoration-3 cursor-pointer hover:text-violet-500">
+          <Link
+            to="/aboutme"
+            className="text-slate-200 underline decoration-violet-300/75 decoration-3 cursor-pointer hover:text-violet-500"
+          >
             {" "}
             درباره‌ی من{" "}
-          </a>
+          </Link>
           رو بخونید یا حتی میتونید
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+          <Link
+            to="/resume"
+            className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"
+          >
             {" "}
             رزومه{" "}
-          </a>
+          </Link>
           و
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+          <Link
+            to="/articles"
+            className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"
+          >
             {" "}
             مقالات{" "}
-          </a>
+          </Link>
           منو چک کنید.
           <br></br>
           سورس سایت رو میتونید
-          <a className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500">
+          <a
+           href='https://github.com/GhazalehNiazi/myblog' target={'_blank'}
+            className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"
+          >
             {" "}
             اینجا{" "}
           </a>

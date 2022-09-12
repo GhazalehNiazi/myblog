@@ -18,7 +18,7 @@ const App: FC = () => {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="about" element={<About />} />
+          <Route path="aboutme" element={<About />} />
           <Route path="resume" element={<Resume />} />
           <Route path="articles" element={<Articles />} />
           <Route path="*" element={<Navigate to="/" />} />
