@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const navItems: { name: string; link: string }[] = [
@@ -16,8 +15,8 @@ function Menu({
   return (
     <div
       className={`h-screen bg-neutral-900 fixed left-0 w-full pt-20 px-8 ease-out-in duration-300 ${
-        showMenu ? "translate-x-0 " : "translate-x-full"
-      } `}
+        showMenu ? "translate-x-0 " : "translate-x-full" 
+      }`}
     >
       <button
         className="top-0 fixed text-slate-200 left-0 p-5 text-2xl"
