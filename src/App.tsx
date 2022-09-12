@@ -1,40 +1,31 @@
-import React, { useEffect } from "react";
-import HeroAboutMe from "./components/HeroAboutMe";
-import Menu from "./components/Menu";
-import Navigation from "./components/Navigation";
-import Sidebar from "./components/Sidebar";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { FC } from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
-function App() {
-  const [showMenu, setShowMenu] = useState(false);
+import About from "components/About";
+import Articles from "components/Articles";
+import Resume from "components/Resume";
 
-  const clickHandler = function (): boolean {
-    setShowMenu(!showMenu);
-    return showMenu;
-  };
+import HomePage from "pages/HomePage";
 
-  let navigate = useNavigate();
-  let path = localStorage.getItem("path");
+import MainLayout from "Layout/MainLayout";
+import Redirect404 from "components/404Redirect";
 
-  useEffect(() => {
-    if (path) {
-      localStorage.removeItem("path");
-      console.log(path);
-      navigate(path, { replace: true });
-    }
-  }, []);
-
+const App: FC = () => {
   return (
-    <div className="App bg-neutral-900 ">
-      <Menu setShowMenu={clickHandler} showMenu={showMenu} />
-      <Navigation setShowMenu={clickHandler} showMenu={showMenu} />
-      <main className="bg-neutral-700 flex flex-col lg:flex-row lg:min-h-[91.4vh] lg:justify-between">
-        <HeroAboutMe />
-        <Sidebar />
-      </main>
-    </div>
+    <BrowserRouter basename="/myblog">
+      <Redirect404 />
+
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="about" element={<About />} />
+          <Route path="resume" element={<Resume />} />
+          <Route path="articles" element={<Articles />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
