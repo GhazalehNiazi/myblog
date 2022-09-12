@@ -2,7 +2,7 @@ import React from "react";
 
 function HeroAboutMe() {
   return (
-    <div className=" mt-10 p-4 text-slate-100 bg-neutral-900/75">
+    <div className=" mt-10 p-4 text-slate-100 bg-neutral-900/75 lg:max-h-min lg:mx-12  lg:grow lg:justify-self-center lg:self-start">
       <div className="flex items-center justify-center flex-col border-b border-neutral-500 pb-14">
         <h1 className="text-3xl  font-medium py-5">درباره‌ی این سایت</h1>
         <p className="text-md font-thin tracking-wider flex items-center justify-center text-center text-slate-100">

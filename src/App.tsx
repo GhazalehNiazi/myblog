@@ -29,7 +29,7 @@ function App() {
     <div className="App bg-neutral-900 ">
       <Menu setShowMenu={clickHandler} showMenu={showMenu} />
       <Navigation setShowMenu={clickHandler} showMenu={showMenu} />
-      <main className="bg-neutral-700 ">
+      <main className="bg-neutral-700 flex flex-col lg:flex-row lg:min-h-[91.4vh] lg:justify-between">
         <HeroAboutMe />
         <Sidebar />
       </main>
