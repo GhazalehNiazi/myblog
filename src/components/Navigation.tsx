@@ -16,25 +16,22 @@ function Navigation({
 }) {
   return (
     <div
-      className={`bg-neutral-800 flex justify-between justify-items-center item-center content-center  py-5 text-slate-300 border-b border-neutral-700 px-10`}
+      className={`flex text-xl justify-between justify-items-center item-center content-center  pt-7 text-slate-300 px-10`}
     >
-      <nav className=" flex justify-between text-m w-full px-3">
-        <Link to="/" className="font-['Poppins'] tracking-widest mr-4 ">
-          GHAZALE NIAZI
-        </Link>
-        <div className="pl-3 md:hidden">
+      <nav className=" flex justify-between text-m w-full">
+        <div className=" md:hidden">
           <button className="" onClick={() => setShowMenu()}>
-            <span className="text-violet-500  text-2xl align-middle ">☰</span>
+            <span className="text-violet-500 text-2xl align-middle ">☰</span>
           </button>
         </div>
 
-        <div className="hidden md:flex md:align-start px-2">
+        <div className="hidden md:flex md:align-start px-2 gap-6">
           {navItems.map((item) => (
             <button key={item.link} className="mr-6">
               <NavLink
                 to={item.link}
                 className={({ isActive }) =>
-                  isActive ? "underline decoration-violet-500" : undefined
+                  isActive ? "text-violet-300" : undefined
                 }
               >
                 {item.name}
@@ -42,6 +39,9 @@ function Navigation({
             </button>
           ))}
         </div>
+        <Link to="/" className="font-['Poppins'] tracking-widest mr-4 ">
+          GHAZALE NIAZI
+        </Link>
       </nav>
     </div>
   );
