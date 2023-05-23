@@ -14,10 +14,10 @@ const MainLayout = () => {
   };
 
   return (
-    <div className=" ">
+    <div className="bg-[#131314] min-h-screen px-8">
       <Menu setShowMenu={clickHandler} showMenu={showMenu} />
       <Navigation setShowMenu={clickHandler} showMenu={showMenu} />
-      <main className=" flex flex-col lg:flex-row lg:min-h-[91.4vh] lg:justify-between lg:flex-row-reverse">
+      <main className=" flex flex-col lg:gap-20 lg:flex-row lg:min-h-[91.4vh] lg:justify-between lg:flex-row-reverse ">
         <Outlet />
         <Sidebar />
       </main>

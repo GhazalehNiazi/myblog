@@ -9,6 +9,7 @@ import HomePage from "pages/HomePage";
 
 import MainLayout from "Layout/MainLayout";
 import Redirect404 from "components/404Redirect";
+import EachArticle from "components/EachArticle";
 
 const App: FC = () => {
   return (
@@ -21,6 +22,9 @@ const App: FC = () => {
           <Route path="aboutme" element={<About />} />
           <Route path="resume" element={<Resume />} />
           <Route path="articles" element={<Articles />} />
+          <Route path="article">
+            <Route path=":id" element={<EachArticle />} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
