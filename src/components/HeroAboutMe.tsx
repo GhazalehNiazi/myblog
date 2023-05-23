@@ -52,7 +52,7 @@ function HeroAboutMe() {
             className="text-slate-3 cursor-pointer00 underline decoration-violet-300/75 decoration-3 cursor-pointer cursor-pointer hover:text-violet-500"
           >
             {" "}
-            {" "}     اینجا{" "}
+        {" "}     اینجا{" "}
           </a>
           {" "}    پیدا کنید {" "}
         </p>

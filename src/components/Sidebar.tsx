@@ -2,7 +2,7 @@ import React from "react";
 
 function Sidebar() {
   return (
-    <div className=" text-slate-200 flex flex-col  justify-between  align-center font-['Noto Sans Arabic'] px-16 lg:w-4/12">
+    <div className=" text-slate-200 flex flex-col  justify-between  align-center font-['Noto Sans Arabic'] px-16 lg:w-4/12 max-h-screen pb-7 sticky">
       <div className="flex  justify-center flex-col py-16 ">
         <h1 className="text-3xl font-semibold tracking-wider pb-4 ">
           غزاله نیازی ثابت
