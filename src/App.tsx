@@ -13,7 +13,7 @@ import EachArticle from "components/EachArticle";
 
 const App: FC = () => {
   return (
-    <BrowserRouter basename="/myblog">
+    <BrowserRouter >
       <Redirect404 />
 
       <Routes>
